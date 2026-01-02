@@ -1,0 +1,13 @@
+{
+  "name": "api-testing-postman",
+  "version": "1.0.0",
+  "description": "API Testing with Postman and Newman",
+  "scripts": {
+    "test": "newman run JSONPlaceholder_API_Tests.postman_collection.json",
+    "test:html": "newman run JSONPlaceholder_API_Tests.postman_collection.json -r html --reporter-html-export reports/api-test-report.html"
+  },
+  "dependencies": {
+    "newman": "^6.0.0",
+    "newman-reporter-html": "^1.0.5"
+  }
+}
